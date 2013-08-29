@@ -15,7 +15,7 @@
 		var pluginName = "showHideMore",
 				defaults = {
 				maxHeight: 200,
-				class: "showHideMore",
+				Useclass: "showHideMore",
 				moretext: "show more",
 				lesstext: "show less",
 				moretextclass:"showHideMore_moretext",
@@ -37,7 +37,7 @@
 						var that = this;						
 						
 						this.$container = $("<div></div>");
-						this.$container.addClass(this.settings.class);
+						this.$container.addClass(this.settings.Useclass);
 						
 																	
 						this.$container = this.$element.wrap(this.$container).parent();
@@ -48,10 +48,10 @@
 						}
 						this.status = 0;
 						this.$overlay = $("<div></div>");
-						this.$overlay.addClass(this.settings.class+'_overlay');
+						this.$overlay.addClass(this.settings.Useclass+'_overlay');
 						this.$container.append(this.$overlay);
 						this.$showHideButton = $("<a></a>");
-						this.$showHideButton.addClass(this.settings.class+'_showhidebutton').html(this.settings.moretext);						
+						this.$showHideButton.addClass(this.settings.Useclass+'_showhidebutton').html(this.settings.moretext);						
 						this.$container.after(this.$showHideButton);
 						
 						this.$container.css({
